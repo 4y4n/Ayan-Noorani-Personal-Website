@@ -629,20 +629,6 @@ section {
   color: var(--color-secondary);
 }
 
-.main-title h2 .bg-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: var(--color-grey-5);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
-  z-index: -1;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-weight: 800;
-  font-size: 6.3rem;
-}
-
 @media screen and (max-width: 600px) {
   .about-container {
     -ms-grid-columns: (1fr)[1];
