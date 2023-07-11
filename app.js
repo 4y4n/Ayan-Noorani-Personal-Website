@@ -34,6 +34,13 @@ function inin() {
     // something[slidesIndex-1].className = "slides fade";
 }
 
+function trans() {
+    console.log("wefopn")
+    document.getElementsByClassName("image")[0].style.transform += "translateX(-800px)";
+}
+
+setInterval(trans, 3000);
+
 
 // btn.addEventListener("click", function() {
 //     console.log("iuew")
@@ -48,30 +55,30 @@ function inin() {
 //     }
 // })
 
-const newspaperSpinning = [
-    { opacity: "0" },
-    { opacity: "1" },
-];
+// const newspaperSpinning = [
+//     { opacity: "0" },
+//     { opacity: "1" },
+// ];
 
-const newspaperTiming = {
-    duration: 2000,
-    iterations: 1,
-};
+// const newspaperTiming = {
+//     duration: 2000,
+//     iterations: 1,
+// };
 
-var r = document.querySelector(':root')
+// var r = document.querySelector(':root')
 
-var change = false;
-document.getElementById("switch").addEventListener("click", () => {
-    console.log("ioefw")
-    document.getElementsByClassName("bod")[0].animate(newspaperSpinning, newspaperTiming);
-    if (change) {
-        console.log("change")
-        r.style.setProperty('--color--background', '#D4DDED');
-        change = false;
-    } else {
-        r.style.setProperty('--color-background', 'red');
-        change = true;
-    }
+// var change = false;
+// document.getElementById("switch").addEventListener("click", () => {
+//     console.log("ioefw")
+//     document.getElementsByClassName("bod")[0].animate(newspaperSpinning, newspaperTiming);
+//     if (change) {
+//         console.log("change")
+//         r.style.setProperty('--color--background', '#D4DDED');
+//         change = false;
+//     } else {
+//         r.style.setProperty('--color-background', 'red');
+//         change = true;
+//     }
     
-})
+// })
     
