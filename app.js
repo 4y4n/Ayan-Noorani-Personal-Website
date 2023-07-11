@@ -1,40 +1,77 @@
-const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controls');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelectorAll('.main-content');
 
+// let carousel = document.getElementsByClassName("slides");
+// carousel[0].style.display = "block"
+// for (let i=1; i<carousel.length; i++) {
+//     carousel[i].style.display = "none";
+// }
 
-function PageTransitions(){
-    // Button Click active class
-    for(let i = 0; i < sectBtn.length; i++){
-        sectBtn[i].addEventListener('click', function() {
-            let currentBtn = document.querySelectorAll('.active-btn');
-            currentBtn[0].className = currentBtn[0].className.replace('active-btn', '');
-            this.className += ' active-btn';
-        });
+let slidesIndex = 0;
+// slide();
+
+function slide() {
+    let current = document.getElementsByClassName("slides");
+    for (let j=0; j<current.length; j++) {
+        current[j].style.display = "none";
     }
-    // Sections Active Class
-    allSections[0].addEventListener('click', (e) => {
-        const id = e.target.dataset.id;
-        if(id) {
-            const btns = sectBtns[0].children;
-            for (let btn of btns){
-                btn.classList.remove('active')
-            }
-            // Remove selected from the button
-            // sectBtns.forEach((btn) => {
-            //     btn.classList.remove('active')
-            // });
-            e.target.classList.add('active')
+    slidesIndex++;
+    if (slidesIndex > current.length) {
+        slidesIndex = 1;
+    }
+    current[slidesIndex-1].style.display = "block";
+    setTimeout(out, 2000)
+    setTimeout(inin, 3090)
+    setTimeout(slide, 4000)
 
-            // Hide other sections
-            sections.forEach((sections)=>{
-                sections.classList.remove('active')
-            });
-
-            const element = document.getElementById(id);
-            element.classList.add('active')
-        }
-    });
 }
-PageTransitions();
+
+function out() {
+    let something = document.getElementsByClassName("slides");
+    something[slidesIndex-1].className = "slides fade fade-out";
+}
+
+function inin() {
+    let something = document.getElementsByClassName("slides");
+    // something[slidesIndex-1].className = "slides fade";
+}
+
+
+// btn.addEventListener("click", function() {
+//     console.log("iuew")
+//     if (change) {
+//         r.style.animation = 'opac';
+//         r.style.setProperty('--color-primary', '#D4DDED');
+//         change = false;
+//     } else {
+//         r.style.animation = 'opac';
+//         r.style.setProperty('--color-primary', 'red');
+//         change = true;
+//     }
+// })
+
+const newspaperSpinning = [
+    { opacity: "0" },
+    { opacity: "1" },
+];
+
+const newspaperTiming = {
+    duration: 2000,
+    iterations: 1,
+};
+
+var r = document.querySelector(':root')
+
+var change = false;
+document.getElementById("switch").addEventListener("click", () => {
+    console.log("ioefw")
+    document.getElementsByClassName("bod")[0].animate(newspaperSpinning, newspaperTiming);
+    if (change) {
+        console.log("change")
+        r.style.setProperty('--color--background', '#D4DDED');
+        change = false;
+    } else {
+        r.style.setProperty('--color-background', 'red');
+        change = true;
+    }
+    
+})
+    
