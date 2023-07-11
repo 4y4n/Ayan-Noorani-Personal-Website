@@ -89,7 +89,7 @@ a {
 .image {
     display: flex;
     width: 400px;
-    transform: translateX(-300px);
+    /* transform: translateX(-100px); */
     transition: 500ms;
 }
 
@@ -245,6 +245,25 @@ a {
 /* ------------------------------------------------------------------------------------- */
 /* Projects */
 
+.projects-title {
+    display: block;
+    height: 100px;
+    margin-top: 20px;
+    /* position: absolute; */
+}
+
+.projects-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-title p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projects-container {
     /* display: flex; */
     width: fit-content;
@@ -254,6 +273,8 @@ a {
     /* grid-template-columns: repeat(1, 1fr); */
     /* border: 1px solid black; */
 }
+
+
 
 .project-container {
     display: grid;
