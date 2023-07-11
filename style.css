@@ -70,14 +70,14 @@ a {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .left-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
 }
 
@@ -150,7 +150,7 @@ a {
 }
 
 .name span {
-    color: brown;
+    color: var(--color-secondary);
 }
 
 /* Buttons */
@@ -279,7 +279,7 @@ a {
 .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 40px;
 }
 
