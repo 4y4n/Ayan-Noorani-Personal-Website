@@ -35,11 +35,16 @@ function inin() {
 }
 
 function trans() {
-    console.log("wefopn")
     document.getElementsByClassName("image")[0].style.transform += "translateX(-800px)";
 }
 
-setInterval(trans, 3000);
+function cls() {
+    clearInterval(boodaboodee);
+}
+
+let boodaboodee = setInterval(trans, 3000);
+
+setTimeout(cls, 12000);
 
 
 // btn.addEventListener("click", function() {
