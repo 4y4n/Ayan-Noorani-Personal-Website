@@ -1,50 +1,14 @@
 
-// let carousel = document.getElementsByClassName("slides");
-// carousel[0].style.display = "block"
-// for (let i=1; i<carousel.length; i++) {
-//     carousel[i].style.display = "none";
+// function out() {
+//     let something = document.getElementsByClassName("slides");
+//     something[slidesIndex-1].className = "slides fade fade-out";
 // }
 
-let slidesIndex = 0;
-// slide();
+// function inin() {
+//     let something = document.getElementsByClassName("slides");
+//     // something[slidesIndex-1].className = "slides fade";
+// }
 
-function slide() {
-    let current = document.getElementsByClassName("slides");
-    for (let j=0; j<current.length; j++) {
-        current[j].style.display = "none";
-    }
-    slidesIndex++;
-    if (slidesIndex > current.length) {
-        slidesIndex = 1;
-    }
-    current[slidesIndex-1].style.display = "block";
-    setTimeout(out, 2000)
-    setTimeout(inin, 3090)
-    setTimeout(slide, 4000)
-
-}
-
-function out() {
-    let something = document.getElementsByClassName("slides");
-    something[slidesIndex-1].className = "slides fade fade-out";
-}
-
-function inin() {
-    let something = document.getElementsByClassName("slides");
-    // something[slidesIndex-1].className = "slides fade";
-}
-
-function trans() {
-    document.getElementsByClassName("image")[0].style.transform += "translateX(-800px)";
-}
-
-function cls() {
-    clearInterval(boodaboodee);
-}
-
-let boodaboodee = setInterval(trans, 3000);
-
-setTimeout(cls, 12000);
 
 
 // btn.addEventListener("click", function() {
@@ -86,4 +50,21 @@ setTimeout(cls, 12000);
 //     }
     
 // })
-    
+
+
+function slide() {
+    let slides = document.getElementsByClassName("slides")
+    for(let i=0; i<4; i++) {
+        slides[i].style.transform += "translateX(-50px)";
+    }
+    setTimeout(before, 500);
+}
+
+function before() {
+    var parent = document.getElementsByClassName("image")[0];
+    var img0 = document.getElementsByClassName("slides")[0];
+    parent.insertBefore(img0, undefined);
+    document.getElementsByClassName("image")[0].style.transform += "translateX(50px)";
+}
+
+setInterval(slide, 3000);

@@ -83,20 +83,30 @@ a {
 
 .image-container {
     display: flex;
-    width: 100px;
+    width: 50px;
+    border: 2px solid black;
+    z-index: 100;
 }
 
 .image {
     display: flex;
     width: 400px;
     /* transform: translateX(-100px); */
-    transition: 500ms;
+    /* transition: 500ms; */
 }
 
+/* .slides-1 {
+    flex: 1;
+    
+}
+
+.slides-2 {
+    display: inline-block;
+} */
+
 .slides {
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 100px;
+    width: 50px;
+    transition: 500ms;
 }
 
 /* .slide0 {
