@@ -141,7 +141,7 @@ a {
     /* border: 1px solid black; */
     padding-top: 1rem;
     width: 500px;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .right-header p {
@@ -256,12 +256,19 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.projects-title p {
+.projects-title-p {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* width: 500px; */
+}
+
+.projects-title p {
+    text-align: center;
+    width: 830px;
 }
 
 .projects-container {
@@ -295,6 +302,7 @@ a {
 
 .right-project img {
     width: 800px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .left-project {
