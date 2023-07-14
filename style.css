@@ -21,21 +21,22 @@ html {
 }
 
 
-/* body {
+body {
     min-height: 100vh;
     width: 100%;
     position: absolute;
     left: 0;
     top: 0;
     padding: 25px 60px;
+    /* padding: 3% 1%; */
     background-color: var(--color-primary);
     background-color: var(--color-background);
     font-family: 'Poppins', sans-serif;
     animation-name: opac;
     animation-duration: 2s;
-} */
+}
 
-.bod1 {
+/* .bod1 {
     background-color: var(--color-background);
     min-height: 100vh;
     width: 100%;
@@ -46,7 +47,7 @@ html {
     font-family: 'Poppins', sans-serif;
     animation-name: opac;
     animation-duration: 2s;
-}
+} */
 
 
 @keyframes opac {
@@ -97,30 +98,12 @@ a {
     /* transition: 500ms; */
 }
 
-/* .slides-1 {
-    flex: 1;
-    
-}
-
-.slides-2 {
-    display: inline-block;
-} */
-
 .slides {
     width: 500px;
-    transition: 500ms;
+    transition: 500ms ease-in-out;
     border-radius: 5px;
     margin-left: 100px;
 }
-
-/* .slide0 {
-    display: flex;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-} */
   
 @keyframes fade {
     0% {
@@ -139,14 +122,14 @@ a {
 
 .right-header h1 {
     /* border: 1px solid black; */
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     width: 500px;
     font-size: 45px;
 }
 
 .right-header p {
     padding-top: 1rem;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .name span {
@@ -155,7 +138,7 @@ a {
 
 /* Buttons */
 .btns {
-    padding-top: 1rem;
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 3fr);
 }
