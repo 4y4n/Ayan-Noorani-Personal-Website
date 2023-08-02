@@ -14,7 +14,7 @@
     <div class="header-content">
         <div class="left-header">
             <div class="h-shape"></div>
-                <div class="image-container">
+                <div class="image-container" id="images-container">
                     <div class="image">
                         <img class="slides slide0" src="images/aboutme/port0.jpg" alt="">
                         <img class="slides slide1" src="images/aboutme/port1.jpg" alt="">
@@ -23,7 +23,6 @@
                         <!-- <img class="slides fade slide0"src="images/hero.png" alt=""> -->
                     </div>
                 </div>
-                
             </div>
             <div class="right-header">
                 <h1 class="name">
@@ -33,7 +32,7 @@
                 <p>
                     I am currently a student in the IB program, entering grade 12 at Milliken Mills High School.  In addition to my studies, I work part-time at Code Ninjas Markham as a programming instructor where I teach young kids how to code using javascript. When I step away from the computer, you'll often find me embarking on day trips, trail biking and exploring new paths. I also really enjoy listening to music, with indie and rock with indie and rock being my personal favourite genres. 
                     <br/><br/>
-                    This past year, I took the initiative to establish and lead a school-based club centered around urban planning. This club is currently working closely with the school board and the city towards improving student safety around the school. At the moment, I am actively working on improving my web development skills, with a specific focus on getting more comfortable with JavaScript.
+                    I also have an interest in urban planning, as I took the initiative to establish and lead a school-based club centered around this. This club is currently working closely with the school board and the city towards improving student safety around the school. At the moment, I am actively working on improving my web development skills, with a specific focus on getting more comfortable with JavaScript.
                 </p>
                 <div class="btns">
                     <div class="btn-container">
@@ -70,7 +69,7 @@
                 <div class="left-project">
                     <h1>ZoomMate</h1>
                     <p>ZoomMate is a program I created that fully automates the process of attending Zoom meetings. It allows users to input their meeting details such as start times, end times, Zoom links and days active into a master json file. I used python’s webbrowser library to open the Zoom meetings with the links at the specified start times, automatically joining the meetings. To exit the meeting once they conclude, the Zoom application is killed. ZoomMate is able to handle multiple meetings occurring on different days throughout the week as it references the days that the meeting is active before attending each one.</p>
-                    <a class="project-btn" href="https://github.com/4y4n/ZoomOpener" target="_blank" style="text-decoration:none">Source Code</a>
+                    <a class="project-btn" href="https://github.com/4y4n/ZoomMate" target="_blank" style="text-decoration:none">Source Code</a>
                 </div>
                 <div class="right-project">
                     <img src="images/projects/ZoomMate.png" alt="">
@@ -84,7 +83,18 @@
                     <a role="button" class="project-btn" target="_blank" href="https://github.com/faymo/Fruity-Facts">Source Code</a>
                 </div>
                 <div class="right-project">
-                    <img src="images/projects/FruityFacts.png" alt="">
+                    <img src="images/projects/Fruity_Facts.png" alt="">
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="left-project">
+                    <h1>SiteSight Insights</h1>
+                    
+                    <p>This program uses the sqlite3 Python library, this tool queries the user’s local browser database, extracting tons of information. This includes records of every website the user has visited, along with the corresponding date and time of each visit, as well as the duration spent on each site. The program then parses through the URLs and calculates the frequency of each domain, generating comprehensive visit counts. The program can then display the results in a textual format, or in a graphical format. It uses Python’s matplotlib module to graph the user’s top 10 most frequently visited websites.</p>
+                    <a role="button" class="project-btn" target="_blank" href="https://github.com/4y4n/Browser_History_Analyzer">Source Code</a>
+                </div>
+                <div class="right-project">
+                    <img src="images/projects/SiteSight_Insights.png" alt="">
                 </div>
             </div>
         </div>

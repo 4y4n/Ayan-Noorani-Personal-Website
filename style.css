@@ -94,6 +94,7 @@ a {
     width: 400%;
     animation-name: fade;
     animation-duration: 500ms;
+
     /* transform: translateX(-100px); */
     /* transition: 500ms; */
 }
@@ -102,6 +103,7 @@ a {
     width: 500px;
     transition: 500ms ease-in-out;
     border-radius: 5px;
+    /* margin-left: calc(25% - 500px); */
     margin-left: 100px;
 }
   
@@ -152,6 +154,7 @@ a {
     border-radius: 30px;
     font-size: 20px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .main-btn {
@@ -178,6 +181,7 @@ a {
     transition: all .2s ease-in; 
     font-size: 18px;
     color: var(--color-text);
+    font-weight: 800;
 }
 
 .btn-icon {
