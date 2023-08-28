@@ -53,31 +53,31 @@
 
 
 
-let width = document.getElementById('images-container').offsetWidth;
-let margin;
+// let width = document.getElementById('images-container').offsetWidth;
+// let margin;
 
-function checkWidth () {
-    width = document.getElementById('images-container').offsetWidth;
-    margin = (width - 500)/2;
-    document.getElementsByClassName("slides")[0].style.marginLeft = margin
-}
+// function checkWidth () {
+//     width = document.getElementById('images-container').offsetWidth;
+//     margin = (width - 500)/2;
+//     document.getElementsByClassName("slides")[0].style.marginLeft = margin
+// }
     
-setInterval(checkWidth, 200);
+// setInterval(checkWidth, 200);
 
-function before() {
-    var parent = document.getElementsByClassName("image")[0];
-    var img0 = document.getElementsByClassName("slides")[0];
-    parent.insertBefore(img0, undefined);
-    document.getElementsByClassName("image")[0].style.transform += `translateX(${500+margin}px)`;
-}
+// function before() {
+//     var parent = document.getElementsByClassName("image")[0];
+//     var img0 = document.getElementsByClassName("slides")[0];
+//     parent.insertBefore(img0, undefined);
+//     document.getElementsByClassName("image")[0].style.transform += `translateX(${500+margin}px)`;
+// }
 
-function slide() {
-    let slides = document.getElementsByClassName("slides")
-    for(let i=0; i<4; i++) {
-        slides[i].style.transform += `translateX(-${500+margin}px)`;
-    }
-    setTimeout(before, 500);
-}
+// function slide() {
+//     let slides = document.getElementsByClassName("slides")
+//     for(let i=0; i<4; i++) {
+//         slides[i].style.transform += `translateX(-${500+margin}px)`;
+//     }
+//     setTimeout(before, 500);
+// }
 
-setInterval(slide, 3000);
+// setInterval(slide, 3000);
 

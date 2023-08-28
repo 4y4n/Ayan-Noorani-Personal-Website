@@ -87,6 +87,8 @@ a {
     width: 100%;
     /* border: 2px solid black; */
     z-index: 100;
+    align-items: center;
+    justify-content: center;
 }
 
 .image {
@@ -94,9 +96,12 @@ a {
     width: 400%;
     animation-name: fade;
     animation-duration: 500ms;
+    animation-timing-function: ease-in;
 
     /* transform: translateX(-100px); */
     /* transition: 500ms; */
+    align-items: center;
+    justify-content: center;
 }
 
 .slides {
@@ -105,6 +110,12 @@ a {
     border-radius: 5px;
     /* margin-left: calc(25% - 500px); */
     margin-left: 100px;
+}
+
+#slides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
   
 @keyframes fade {
@@ -275,6 +286,8 @@ a {
     grid-template-columns: repeat(2, 1fr);
     /* border: 1px solid black; */
     margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: var(--color-secondary) 0 0 20px;
 }
 
 .right-project{
@@ -290,7 +303,18 @@ a {
 .right-project img {
     width: 800px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    transition: 200ms;
+    margin-right: 10px;
 }
+
+.right-project img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+
 
 .left-project {
     margin-top: 20px;
