@@ -18,4 +18,4 @@ function vanta(colour, backgroundColour) {
   })
 }
 
-vanta(0xEF476F, 0x1B9AAA)
+vanta(0xEF476F, 0x198F9F)
