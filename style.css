@@ -9,14 +9,14 @@
     --color-primary: rgb(248, 255, 229);
     /* --color-secondary: rgb(150, 79, 201); */
     --color-secondary: rgb(239, 71, 111);
-    /* --color-secondary: rgb(244, 37, 85);
-    --color-secondary: rgb(150, 79, 201);
+    /* --color-secondary: rgb(255, 26, 80); */
+    /* --color-secondary: rgb(150, 79, 201);
     --color-secondary: rgb(200, 25, 225); */
 
-    --color-secondary-fade: 244, 37, 85;
+    --color-secondary-fade: 255, 16, 69;
     --color-secondary-box: 239, 71, 111;
     /* --color-primary: rgb(2, 14, 14); */
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+    --box-shadow-1: rgba(var(--color-secondary-fade), 0.40) 0px 7px 29px 0px;
 }
 
 html {
@@ -316,7 +316,7 @@ a {
 
 .right-project img {
     width: 800px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: var(--box-shadow-1);
     border-radius: 15px;
     transition: 200ms;
     margin-right: 10px;
