@@ -81,3 +81,14 @@
 
 // setInterval(slide, 3000);
 
+let flag = false
+
+document.getElementsByTagName("button")[0].onclick = function(){
+    console.log("changing")
+    if (flag) {
+        vanta(0xFFCF9C, 0x3B1C32)
+    } else {
+        vanta(0xEF476F, 0x1B9AAA)
+    }
+    flag = !flag;
+};

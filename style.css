@@ -6,14 +6,17 @@
 }
 
 :root {
-    --color-primary: #D4DDED;
+    --color-primary: rgb(248, 255, 229);
+    /* --color-secondary: rgb(150, 79, 201); */
+    --color-secondary: rgb(239, 71, 111);
+    /* --color-secondary: rgb(244, 37, 85);
     --color-secondary: rgb(150, 79, 201);
-    --color-secondary-fade: 200, 25, 225;
-    --color-secondary-box: 150,79, 201;
-    --color-text: rgb(2, 14, 14);
-    -color-buttons: rgb(197, 119, 55);
+    --color-secondary: rgb(200, 25, 225); */
+
+    --color-secondary-fade: 244, 37, 85;
+    --color-secondary-box: 239, 71, 111;
+    /* --color-primary: rgb(2, 14, 14); */
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
-    --color-background: #D4DDED;
 }
 
 html {
@@ -29,11 +32,16 @@ body {
     top: 0;
     padding: 25px 60px;
     /* padding: 3% 1%; */
-    background-color: var(--color-primary);
-    background-color: var(--color-background);
+    /* background-color: var(--color-primary); */
     font-family: 'Poppins', sans-serif;
     animation-name: opac;
     animation-duration: 2s;
+}
+
+#testing {
+    width: 100px;
+    height: 100px;
+    /* background-color: black; */
 }
 
 /* .bod1 {
@@ -130,7 +138,7 @@ a {
 
 .right-header {
     padding: 3rem 3rem;
-    color: var(--color-text);
+    color: var(--color-primary);
 }
 
 .right-header h1 {
@@ -172,7 +180,7 @@ a {
     border-radius: 30px;
     font-weight: 600;
     position: relative;
-    border: 1px solid black;
+    /* border: 1px solid var(--color-primary); */
     display: flex;
     overflow: hidden;
     align-self: flex-start;
@@ -191,7 +199,7 @@ a {
     opacity: 1;
     transition: all .2s ease-in; 
     font-size: 18px;
-    color: var(--color-text);
+    color: var(--color-primary);
     font-weight: 800;
 }
 
@@ -215,7 +223,7 @@ a {
 .btn-icon i {
     transform: translateX(0);
     transition: all .2s ease-in;
-    color: var(--color-text);
+    color: var(--color-primary);
     font-size: 1rem;
     filter: none;
 }
@@ -223,7 +231,7 @@ a {
 .main-btn:hover .btn-icon {
     width: 8rem;
     transition: all .2s ease-out;
-    background-color: rgba(var(--color-secondary-fade), 0.55);
+    background-color: rgba(var(--color-secondary-fade), 0.70);
     backdrop-filter: blur(2px);
 }
 
@@ -243,6 +251,10 @@ a {
 /* ------------------------------------------------------------------------------------- */
 /* Projects */
 
+#projects {
+    color: var(--color-primary);
+}
+
 .projects-title {
     display: block;
     height: 100px;
@@ -255,6 +267,8 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: var(--color-secondary);
+
 }
 
 .projects-title-p {
@@ -287,7 +301,7 @@ a {
     /* border: 1px solid black; */
     margin-bottom: 40px;
     border-radius: 15px;
-    box-shadow: var(--color-secondary) 0 0 20px;
+    box-shadow: rgba(var(--color-secondary-fade), 0.40) 0px 7px 29px 0px;
 }
 
 .right-project{
@@ -365,9 +379,9 @@ a {
     font-size: 18px;
 }
    
-.project-btn:focus {
+/* .project-btn:focus {
     box-shadow: #D6D6E7 0 0 20px 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(var(--color-secondary-fade), 0.55) 0 -3px 0 inset;
-}
+} */
    
 .project-btn:hover {
     box-shadow: rgba(45, 35, 66, 0.3) 0 4px 20px, rgba(45, 35, 66, 0.2) 0 7px 13px -3px, rgba(var(--color-secondary-fade), 0.55) 0 -3px 0 inset;
