@@ -41,7 +41,7 @@ body {
 #testing {
     width: 100px;
     height: 100px;
-    /* background-color: black; */
+    background-color: black;
 }
 
 /* .bod1 {
@@ -302,6 +302,9 @@ a {
     margin-bottom: 40px;
     border-radius: 15px;
     box-shadow: rgba(var(--color-secondary-fade), 0.40) 0px 7px 29px 0px;
+    opacity: 0;
+    transform: translateY(35%);
+    transition: 750ms ease-out;
 }
 
 .right-project{
@@ -339,7 +342,6 @@ a {
 
 .left-project h1{
     display: flex;
-
 }
 .left-project p {
     display: flex;

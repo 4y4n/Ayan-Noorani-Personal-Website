@@ -11,11 +11,11 @@ function vanta(colour, backgroundColour) {
     scaleMobile: 1.00,
     color: colour,
     backgroundColor: backgroundColour,
-    points: 15.00,
-    maxDistance: 23.00,
-    spacing: 14.00,
+    points: 16.00,
+    maxDistance: 24.00,
+    spacing: 13.00,
     showDots: false
   })
 }
 
-vanta(0xEF476F, 0x198F9F)
+vanta(0xEF476F, 0x1C9FB0)

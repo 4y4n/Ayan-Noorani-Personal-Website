@@ -1,111 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayan Noorani</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="images/favicon-32x32.png">
-</head>
-<body class="bod">
-    <div class="header-content">
-        <div class="left-header">
-            <div class="h-shape"></div>
-                <div class="image-container" id="images-container">
-                    <div class="image">
-                        <!-- <img class="slides slide0" src="images/aboutme/port0.jpg" alt="">
-                        <img class="slides slide1" src="images/aboutme/port1.jpg" alt="">
-                        <img class="slides slide2" src="images/aboutme/port2.jpg" alt="">
-                        <img class="slides slide3" src="images/aboutme/port3.jpg" alt=""> -->
-                        <iframe id="slides" style="border-radius: 15px; width: 580px;height: 720px;background: transparent;border: none;" src="slides/slides.html"></iframe>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ayan Noorani</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="images/favicon-32x32.png">
+    </head>
+    <body class="bod">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                    <div class="image-container" id="images-container">
+                        <div class="image">
+                            <!-- <img class="slides slide0" src="images/aboutme/port0.jpg" alt="">
+                            <img class="slides slide1" src="images/aboutme/port1.jpg" alt="">
+                            <img class="slides slide2" src="images/aboutme/port2.jpg" alt="">
+                            <img class="slides slide3" src="images/aboutme/port3.jpg" alt=""> -->
+                            <iframe id="slides" style="border-radius: 15px; width: 580px;height: 720px;background: transparent;border: none;" src="slides/slides.html"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="right-header">
+                    <h1 class="name">
+                        Hi, I'm <span>Ayan Noorani.</span> <br/>
+                        A high school student.
+                    </h1>
+                    <p>
+                        I am currently a student in my second year of the IB program at Milliken Mills High School. In addition to my studies, I work part-time at Code Ninjas Markham, teaching young kids to program. When I step away from the computer, I enjoy trail biking with my dad and exploring new paths. I love listening to music, with indie and rock being my personal favourite genres. 
+                        <br/><br/>
+                        Some of my other interests include urban planning and robotics. I am currently working on improving my web development skills, with a specific focus on getting more comfortable with JavaScript.
+                    </p>
+                    <div class="btns">
+                        <div class="btn-container">
+                            <a href="https://github.com/4y4n" class="main-btn" target="_blank" style="text-decoration:none">
+                                <span class="btn-icon"><i class="fa-brands fa-github"></i></span>
+                                <span class="btn-text">Github</span>
+                            </a>
+                        </div>
+                        <div class="btn-container">
+                            <span class="icon-btn"></span>
+                            <a href="https://www.ayan.imnotavailable.com/resume.pdf" class="main-btn" target="_blank" style="text-decoration:none">
+                                <span class="btn-icon"><i class="fa-solid fa-file"></i></span>
+                                <span class="btn-text">Resume</span>
+                            </a>
+                        </div> 
+                        <div class="btn-container">
+                            <a href="#projects" class="main-btn" style="text-decoration:none">
+                                <span class="btn-icon"><i class="fa-solid fa-layer-group"></i></span>
+                                <span class="btn-text">Projects</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+        <div id="projects">
+            <div class="projects-title">
+                <h1>Projects</h1>
+                <div class="projects-title-p">
+                    <p>Below are a few of my proudest projects. I've got some more in the works and plenty of exciting plans for the future, so stay tuned for updates. Feel free to check out my GitHub for even more cool stuff!</p>
+                </div>
+            </div>
+            <div class="projects-container">
+                <div class="project-container">
+                    <div class="left-project">
+                        <h1>ZoomMate</h1>
+                        <p>ZoomMate is a program I created that fully automates the process of attending Zoom meetings. It allows users to input their meeting details such as start times, end times, Zoom links and days active into a master json file. I used python’s webbrowser library to open the Zoom meetings with the links at the specified start times, automatically joining the meetings. To exit the meeting once they conclude, the Zoom application is killed. ZoomMate is able to handle multiple meetings occurring on different days throughout the week as it references the days that the meeting is active before attending each one.</p>
+                        <a class="project-btn" href="https://github.com/4y4n/ZoomMate" target="_blank" style="text-decoration:none">Source Code</a>
+                    </div>
+                    <div class="right-project">
+                        <img src="images/projects/ZoomMate.png" alt="">
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="left-project">
+                        <h1>Fruity Facts</h1>
+                        
+                        <p>This was a creative collaboration between a group of friends that uses machine learning (ML) techniques. By simply providing an image of a fruit, Fruity Facts harnesses a trained ML model built on the TensorFlow framework to identify the given fruit. We trained the ML model on tens of thousands of fruit images, fine-tuning it through seven iterations. As a result the model was successfully built with an accuracy rate of 99.8%. The program then calls the Edamam API, enabling users to access comprehensive nutritional information for the identified fruit. It displays the exact composition, vitamins, minerals, and other essential nutrients with a single click.</p>
+                        <a role="button" class="project-btn" target="_blank" href="https://github.com/faymo/Fruity-Facts">Source Code</a>
+                    </div>
+                    <div class="right-project">
+                        <img src="images/projects/Fruity_Facts.png" alt="">
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="left-project">
+                        <h1>SiteSight Insights</h1>
+                        
+                        <p>This program uses the sqlite3 Python library, this tool queries the user’s local browser database, extracting tons of information. This includes records of every website the user has visited, along with the corresponding date and time of each visit, as well as the duration spent on each site. The program then parses through the URLs and calculates the frequency of each domain, generating comprehensive visit counts. The program can then display the results in a textual format, or in a graphical format. It uses Python’s matplotlib module to graph the user’s top 10 most frequently visited websites.</p>
+                        <a role="button" class="project-btn" target="_blank" href="https://github.com/4y4n/Browser_History_Analyzer">Source Code</a>
+                    </div>
+                    <div class="right-project">
+                        <img src="images/projects/SiteSight_Insights.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
             
-            <div class="right-header">
-                <h1 class="name">
-                    Hi, I'm <span>Ayan Noorani.</span> <br/>
-                    A high school student.
-                </h1>
-                <p>
-                    I am currently a student in my second year of the IB program at Milliken Mills High School. In addition to my studies, I work part-time at Code Ninjas Markham, teaching young kids to program. When I step away from the computer, I enjoy trail biking with my dad and exploring new paths. I love listening to music, with indie and rock being my personal favourite genres. 
-                    <br/><br/>
-                    Some of my other interests include urban planning and robotics. I am currently working on improving my web development skills, with a specific focus on getting more comfortable with JavaScript.
-                </p>
-                <div class="btns">
-                    <div class="btn-container">
-                        <a href="https://github.com/4y4n" class="main-btn" target="_blank" style="text-decoration:none">
-                            <span class="btn-icon"><i class="fa-brands fa-github"></i></span>
-                            <span class="btn-text">Github</span>
-                        </a>
-                    </div>
-                    <div class="btn-container">
-                        <span class="icon-btn"></span>
-                        <a href="https://www.ayan.imnotavailable.com/resume.pdf" class="main-btn" target="_blank" style="text-decoration:none">
-                            <span class="btn-icon"><i class="fa-solid fa-file"></i></span>
-                            <span class="btn-text">Resume</span>
-                        </a>
-                    </div> 
-                    <div class="btn-container">
-                        <a href="#projects" class="main-btn" style="text-decoration:none">
-                            <span class="btn-icon"><i class="fa-solid fa-layer-group"></i></span>
-                            <span class="btn-text">Projects</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <div id="projects">
-        <div class="projects-title">
-            <h1>Projects</h1>
-            <div class="projects-title-p">
-                <p>Below are a few of my proudest projects. I've got some more in the works and plenty of exciting plans for the future, so stay tuned for updates. Feel free to check out my GitHub for even more cool stuff!</p>
-            </div>
-        </div>
-        <div class="projects-container">
-            <div class="project-container">
-                <div class="left-project">
-                    <h1>ZoomMate</h1>
-                    <p>ZoomMate is a program I created that fully automates the process of attending Zoom meetings. It allows users to input their meeting details such as start times, end times, Zoom links and days active into a master json file. I used python’s webbrowser library to open the Zoom meetings with the links at the specified start times, automatically joining the meetings. To exit the meeting once they conclude, the Zoom application is killed. ZoomMate is able to handle multiple meetings occurring on different days throughout the week as it references the days that the meeting is active before attending each one.</p>
-                    <a class="project-btn" href="https://github.com/4y4n/ZoomMate" target="_blank" style="text-decoration:none">Source Code</a>
-                </div>
-                <div class="right-project">
-                    <img src="images/projects/ZoomMate.png" alt="">
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="left-project">
-                    <h1>Fruity Facts</h1>
-                    
-                    <p>This was a creative collaboration between a group of friends that uses machine learning (ML) techniques. By simply providing an image of a fruit, Fruity Facts harnesses a trained ML model built on the TensorFlow framework to identify the given fruit. We trained the ML model on tens of thousands of fruit images, fine-tuning it through seven iterations. As a result the model was successfully built with an accuracy rate of 99.8%. The program then calls the Edamam API, enabling users to access comprehensive nutritional information for the identified fruit. It displays the exact composition, vitamins, minerals, and other essential nutrients with a single click.</p>
-                    <a role="button" class="project-btn" target="_blank" href="https://github.com/faymo/Fruity-Facts">Source Code</a>
-                </div>
-                <div class="right-project">
-                    <img src="images/projects/Fruity_Facts.png" alt="">
-                </div>
-            </div>
-            <div class="project-container">
-                <div class="left-project">
-                    <h1>SiteSight Insights</h1>
-                    
-                    <p>This program uses the sqlite3 Python library, this tool queries the user’s local browser database, extracting tons of information. This includes records of every website the user has visited, along with the corresponding date and time of each visit, as well as the duration spent on each site. The program then parses through the URLs and calculates the frequency of each domain, generating comprehensive visit counts. The program can then display the results in a textual format, or in a graphical format. It uses Python’s matplotlib module to graph the user’s top 10 most frequently visited websites.</p>
-                    <a role="button" class="project-btn" target="_blank" href="https://github.com/4y4n/Browser_History_Analyzer">Source Code</a>
-                </div>
-                <div class="right-project">
-                    <img src="images/projects/SiteSight_Insights.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <!-- <a href="#switch" id="switch">Switch</a> -->
-    <!-- <button onlick="app.js/change()">click here</button> -->
-</body>
-<script src="app.js"></script>
-<script src="vanta/three.r134.min.js"></script>
-<script src="vanta/vanta.net.min.js"></script>
-<script src="vanta/vanta.js"></script>
+        <!-- <a href="#switch" id="switch">Switch</a> -->
+        <!-- <button>click here</button> -->
+        <div id="testing"></div>
+    </body>
+    <script src="app.js"></script>
+    <script src="vanta/three.r134.min.js"></script>
+    <script src="vanta/vanta.net.min.js"></script>
+    <script src="vanta/vanta.js"></script>
 </html>
