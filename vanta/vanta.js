@@ -1,6 +1,5 @@
-
-function vanta(colour, backgroundColour) {
-    VANTA.NET({
+function vanta(colour=0xEF476F, backgroundColour=0x1C9FB0,maxDistance=24, points=16) {
+  VANTA.NET({
     el: "body",
     mouseControls: false,
     touchControls: true,
@@ -11,11 +10,9 @@ function vanta(colour, backgroundColour) {
     scaleMobile: 1.00,
     color: colour,
     backgroundColor: backgroundColour,
-    points: 16.00,
-    maxDistance: 24.00,
+    points: points,
+    maxDistance: maxDistance,
     spacing: 13.00,
     showDots: false
   })
 }
-
-vanta(0xEF476F, 0x1C9FB0)

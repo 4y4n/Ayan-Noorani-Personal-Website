@@ -7,14 +7,11 @@
 
 :root {
     --color-primary: rgb(248, 255, 229);
-    /* --color-secondary: rgb(150, 79, 201); */
     --color-secondary: rgb(239, 71, 111);
-    /* --color-secondary: rgb(255, 26, 80); */
+    --color-secondary-fade: 255, 16, 69;
+    
     /* --color-secondary: rgb(150, 79, 201);
     --color-secondary: rgb(200, 25, 225); */
-
-    --color-secondary-fade: 255, 16, 69;
-    --color-secondary-box: 239, 71, 111;
     /* --color-primary: rgb(2, 14, 14); */
     --box-shadow-1: rgba(var(--color-secondary-fade), 0.40) 0px 7px 29px 0px;
 }
@@ -32,17 +29,34 @@ body {
     top: 0;
     padding: 25px 60px;
     /* padding: 3% 1%; */
-    /* background-color: var(--color-primary); */
+    background-color: rgb(28, 159, 176);
     font-family: 'Poppins', sans-serif;
-    animation-name: opac;
-    animation-duration: 2s;
+    /* animation-name: opac;
+    animation-duration: 2s; */
 }
 
-#testing {
-    width: 100px;
-    height: 100px;
-    background-color: black;
+#change {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(59, 28, 50);
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 5vh;
+    left: 90vw;
+    z-index: 10000;
+    border: 1px solid black;
+    cursor: pointer;
 }
+#change i {
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(50%);
+}
+
 
 /* .bod1 {
     background-color: var(--color-background);
@@ -67,11 +81,20 @@ body {
     }
 }
 
+@keyframes spin1 { 
+    100% { 
+        transform:rotate(360deg); 
+    } 
+}
 
 
 a { 
     display: inline-block;
 }
+
+
+
+
 
 /* -------------------------------------------------------------------------------------------------- */
 /* header */
@@ -304,7 +327,7 @@ a {
     box-shadow: rgba(var(--color-secondary-fade), 0.40) 0px 7px 29px 0px;
     opacity: 0;
     transform: translateY(35%);
-    transition: 750ms ease-out;
+    transition: 500ms ease-out;
 }
 
 .right-project{
